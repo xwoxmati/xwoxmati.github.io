@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portafolio · Matías Jusari de los Ríos</title>
+  <meta name="description" content="Portafolio profesional de Matías Jusari de los Ríos: energía solar fotovoltaica, procesos industriales y proyectos de e‑learning." />
+  <style>
+    :root{
+      --bg:#f9fafb;
+      --card:#ffffff;
+      --text:#0f172a;
+      --muted:#475569;
+      --accent:#0ea5e9;
+      --ring:#bae6fd;
+      --border:#e5e7eb;
+      --shadow:0 10px 25px rgba(2,6,23,0.07);
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color:var(--text);
+      background:var(--bg);
+      line-height:1.55;
+    }
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+    header{
+      background:linear-gradient(180deg,#e0f2fe, #f9fafb 45%);
+      padding:40px 0 20px;
+      position:relative;
+    }
+    .card{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:28px;
+    }
+    .hero{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:22px;
+    }
+    .title{
+      font-size: clamp(24px, 3.2vw, 40px);
+      line-height:1.15;
+      margin:0 0 8px;
+      letter-spacing:-0.02em;
+    }
+    .subtitle{color:var(--muted);margin:0 0 12px}
+    nav{
+      display:flex;
+      gap:14px;
+      flex-wrap:wrap;
+      margin-top:8px;
+    }
+    nav a{
+      background:#fff;
+      border:1px solid var(--border);
+      border-radius:999px;
+      padding:10px 14px;
+      box-shadow:var(--shadow);
+      display:inline-block;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:22px;
+      margin-top:22px;
+    }
+    @media (min-width: 880px){
+      .hero{grid-template-columns: 1.15fr .85fr}
+      .grid{grid-template-columns: 1fr 1fr}
+    }
+    h2{
+      font-size: clamp(20px, 2.2vw, 28px);
+      margin:0 0 14px;
+      letter-spacing:-0.01em;
+    }
+    h3{
+      font-size: clamp(18px, 1.9vw, 22px);
+      margin:0 0 10px;
+    }
+    .list{
+      display:grid;
+      gap:10px;
+      padding-left:18px;
+    }
+    .tag{
+      display:inline-block;
+      font-size:14px;
+      padding:6px 10px;
+      border:1px solid var(--border);
+      border-radius:999px;
+      background:#fff;
+      margin-right:8px;
+      margin-bottom:8px;
+    }
+    .muted{color:var(--muted)}
+    .proj{
+      display:grid;
+      gap:10px;
+    }
+    .proj .meta{font-size:14px;color:var(--muted)}
+    footer{
+      text-align:center;
+      padding:28px;
+      color:var(--muted);
+    }
+    .visually-hidden{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap}
+    .contact a{display:inline-block;margin-right:12px}
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:#ecfeff;border:1px solid #cffafe}
+    .kbd{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono","Courier New", monospace;background:#111827;color:#e5e7eb;border-radius:6px;padding:2px 6px;font-size:12px}
+  </style>
+</head>
+<body>
+<a class="visually-hidden" href="#contenido">Saltar al contenido</a>
+<header role="banner">
+  <div class="container hero">
+    <div class="card" aria-labelledby="titulo">
+      <h1 id="titulo" class="title">Matías Jusari de los Ríos</h1>
+      <p class="subtitle">Egresado de Ingeniería en Biotecnología · Energía Solar Fotovoltaica · Aprendizaje en ML</p>
+      <p>
+        Soy egresado de Ingeniería en Biotecnología con formación complementaria en energía solar fotovoltaica (bootcamp, instalaciones prácticas) y una especialización reciente en machine learning. 
+        Mi experiencia se centra en la instalación y mantención de sistemas FV, con foco en eficiencia energética y sostenibilidad.
+        Actualmente inicio un proyecto de e‑learning basado en Moodle.
+      </p>
+      <nav aria-label="Secciones principales">
+        <a href="#proyectos">Proyectos</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#educacion">Educación</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+    <div class="card contact" aria-labelledby="contacto-card">
+      <h2 id="contacto-card">Contacto</h2>
+      <p><strong>Ubicación:</strong> Santiago de Chile</p>
+      <p><strong>Sitio:</strong> <a href="https://matia.space" rel="noopener">matia.space</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/matiasjdlr/" rel="noopener">linkedin.com/in/matiasjdlr</a></p>
+      <p><strong>Email:</strong> <a href="mailto:msjdlr@live.cl">msjdlr@live.cl</a></p>
+      <!-- Si prefieres mostrar tu teléfono, descomenta la línea siguiente -->
+      <!-- <p><strong>Teléfono:</strong> +56 9 5117 9127</p> -->
+    </div>
+  </div>
+</header>
+
+<main id="contenido" class="container" role="main">
+
+  <section id="proyectos" class="grid" aria-labelledby="h-proyectos">
+    <div class="card" style="grid-column:1/-1">
+      <h2 id="h-proyectos">Proyectos</h2>
+      <p class="muted">Cada proyecto incluye descripción, objetivos, tecnologías y una breve reflexión.</p>
+    </div>
+
+    <!-- Proyecto 1 -->
+    <article class="card proj" aria-labelledby="p1">
+      <div>
+        <h3 id="p1">Instalación FV Residencial · Puesta en Marcha</h3>
+        <p class="meta">Rol: Ayudante de instalaciones · 2024–2025</p>
+      </div>
+      <p><strong>Descripción:</strong> Participación en instalaciones y mantenciones residenciales de sistemas fotovoltaicos on‑grid, incluyendo montaje, conexionado DC/AC y pruebas de operación del inversor.</p>
+      <ul class="list">
+        <li><strong>Objetivos:</strong> Garantizar instalación segura y operativa; reducir tiempos de montaje y asegurar checklist de QA.</li>
+        <li><strong>Tecnologías/herramientas:</strong> Inversores on‑grid, módulos FV, EPP, multímetro, pinza amperimétrica, manuales del fabricante.</li>
+        <li><strong>Resultados:</strong> Puesta en marcha sin incidentes; documentación de checklist y recomendaciones de mantenimiento preventivo.</li>
+        <li><strong>Reflexión:</strong> Fortalecí criterios de seguridad y orden en obra; propuse un checklist que estandariza pasos críticos.</li>
+      </ul>
+    </article>
+
+    <!-- Proyecto 2 -->
+    <article class="card proj" aria-labelledby="p2">
+      <div>
+        <h3 id="p2">Seguimiento operativo para prueba censal (INE)</h3>
+        <p class="meta">Rol: Coordinador / Supervisor · 2023</p>
+      </div>
+      <p><strong>Descripción:</strong> Apoyo a la logística y seguimiento de equipos de censistas/enumeradores en RM, con control de avances y reportabilidad.</p>
+      <ul class="list">
+        <li><strong>Objetivos:</strong> Mejorar visibilidad de cobertura diaria y resolver cuellos de botella de terreno.</li>
+        <li><strong>Herramientas:</strong> Excel/Sheets para control de avances, tablas dinámicas, checklists operacionales.</li>
+        <li><strong>Resultados:</strong> Mayor trazabilidad de metas diarias y coordinación con juntas de vecinos y administradores.</li>
+        <li><strong>Reflexión:</strong> La estandarización de reportes simples aumentó la eficiencia de comunicación entre equipos.</li>
+      </ul>
+    </article>
+
+    <!-- Proyecto 3 -->
+    <article class="card proj" aria-labelledby="p3">
+      <div>
+        <h3 id="p3">E‑learning Piloto en Moodle</h3>
+        <p class="meta">Rol: Implementación y diseño instruccional · 2025 (en curso)</p>
+      </div>
+      <p><strong>Descripción:</strong> Implementación inicial de un entorno en Moodle para crear un curso piloto (introducción a energía solar / contenidos básicos técnicos).</p>
+      <ul class="list">
+        <li><strong>Objetivos:</strong> Estructurar un curso con unidades, cuestionarios y seguimiento de progreso.</li>
+        <li><strong>Herramientas:</strong> Moodle (roles, cuestionarios, bancos de preguntas), diseño de recursos (PDF/HTML).</li>
+        <li><strong>Resultados (esperados):</strong> Curso navegable con evaluación básica y retroalimentación automática.</li>
+        <li><strong>Reflexión:</strong> Explorar educación técnica en línea y empaquetar conocimientos prácticos de FV.</li>
+      </ul>
+      <!-- Enlaces a demo o código si los agregas más adelante -->
+      <!-- <p><a href="#" aria-label="Ver demo del curso Moodle">Ver demo</a></p> -->
+    </article>
+  </section>
+
+  <section id="experiencia" class="grid" aria-labelledby="h-exp">
+    <div class="card" style="grid-column:1/-1">
+      <h2 id="h-exp">Experiencia</h2>
+    </div>
+
+    <div class="card">
+      <h3>Kütral‑Clima · Ayudante de instalaciones</h3>
+      <p class="muted">2024–2025 · Residencial · Mantención y limpieza de equipos, organización de herramientas e insumos para optimizar tiempos y calidad.</p>
+    </div>
+
+    <div class="card">
+      <h3>INE Chile · Coordinador de Grupo / Supervisor</h3>
+      <p class="muted">2023 · Prueba Censal / Actualización Pre‑Censal · Coordinación de 10 censistas y 5 enumeradores; relación con juntas de vecinos y administradores.</p>
+    </div>
+
+    <div class="card">
+      <h3>Portal Biomedicina UC · Coordinador General (Voluntariado)</h3>
+      <p class="muted">2019–2022 · Organización de eventos científicos; reclutamiento y capacitación; avance hacia sistema de gestión de calidad.</p>
+    </div>
+  </section>
+
+  <section id="educacion" class="grid" aria-labelledby="h-ed">
+    <div class="card" style="grid-column:1/-1">
+      <h2 id="h-ed">Educación</h2>
+    </div>
+
+    <div class="card">
+      <h3>Universidad de Santiago de Chile (USACH)</h3>
+      <p class="muted">Ingeniería en Biotecnología · 2015–2021</p>
+    </div>
+
+    <div class="card">
+      <h3>Bootcamp FV · SER‑CAP</h3>
+      <p class="muted">Instalación y Mantención de paneles solares fotovoltaicos (62 h) · 2024</p>
+    </div>
+
+    <div class="card">
+      <h3>Especialización en Machine Learning</h3>
+      <p class="muted">2025 (curso completado) · Proyectos académicos (no publicados)</p>
+    </div>
+  </section>
+
+  <section id="habilidades" class="grid" aria-labelledby="h-hab">
+    <div class="card" style="grid-column:1/-1">
+      <h2 id="h-hab">Habilidades</h2>
+    </div>
+
+    <div class="card">
+      <h3>Técnicas</h3>
+      <p>
+        <span class="tag">Instalación FV</span>
+        <span class="tag">Mantenimiento</span>
+        <span class="tag">Excel (avanzado)</span>
+        <span class="tag">Python (básico)</span>
+        <span class="tag">MATLAB (básico)</span>
+        <span class="tag">Simulink (básico)</span>
+        <span class="tag">Moodle (básico)</span>
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Blandas</h3>
+      <p>
+        <span class="tag">Comunicación</span>
+        <span class="tag">Trabajo en equipo</span>
+        <span class="tag">Organización</span>
+        <span class="tag">Seguridad y calidad</span>
+        <span class="tag">Aprendizaje continuo</span>
+      </p>
+    </div>
+  </section>
+
+  <section id="contacto" class="grid" aria-labelledby="h-cont">
+    <div class="card" style="grid-column:1/-1">
+      <h2 id="h-cont">Contacto</h2>
+      <p>¿Te interesa colaborar o tienes una propuesta? Escríbeme a <a href="mailto:msjdlr@live.cl">msjdlr@live.cl</a> o visita <a href="https://matia.space">matia.space</a>.</p>
+    </div>
+  </section>
+
+  <section class="container" aria-labelledby="h-notas">
+    <div class="card">
+      <h2 id="h-notas">Notas para la entrega</h2>
+      <ul class="list">
+        <li>Asegúrate de tener <strong>al menos 3 proyectos</strong> documentados con: descripción, objetivos, tecnologías y reflexión.</li>
+        <li>Cuida la <strong>ortografía y gramática</strong>; usa títulos y subtítulos; simplifica la navegación.</li>
+        <li>Publica el sitio en GitHub Pages y verifica el enlace en tu archivo <span class="kbd">CNAME</span>.</li>
+      </ul>
+      <p class="muted">Este portafolio está pensado para cumplir con los requerimientos y rúbrica de una actividad de portafolio profesional (secciones básicas, documentación de proyectos, accesibilidad del enlace, diseño/organización y buenas prácticas de redacción).</p>
+    </div>
+  </section>
+
+</main>
+
+<footer role="contentinfo">
+  © <span id="year"></span> Matías Jusari de los Ríos — Portafolio
+  <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+</footer>
+</body>
+</html>
