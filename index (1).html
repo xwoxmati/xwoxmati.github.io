@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portafolio · Matías Jusari de los Ríos</title>
+  <meta name="description" content="Portafolio profesional de Matías Jusari de los Ríos: proyectos de Machine Learning, e‑learning y energía solar fotovoltaica." />
+  <style>
+    :root{
+      --bg:#f9fafb;
+      --card:#ffffff;
+      --text:#0f172a;
+      --muted:#475569;
+      --accent:#0ea5e9;
+      --ring:#bae6fd;
+      --border:#e5e7eb;
+      --shadow:0 10px 25px rgba(2,6,23,0.07);
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color:var(--text);
+      background:var(--bg);
+      line-height:1.55;
+    }
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+    header{
+      background:linear-gradient(180deg,#e0f2fe, #f9fafb 45%);
+      padding:40px 0 20px;
+      position:relative;
+    }
+    .card{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:28px;
+    }
+    .hero{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:22px;
+    }
+    .title{
+      font-size: clamp(24px, 3.2vw, 40px);
+      line-height:1.15;
+      margin:0 0 8px;
+      letter-spacing:-0.02em;
+    }
+    .subtitle{color:var(--muted);margin:0 0 12px}
+    nav{
+      display:flex;
+      gap:14px;
+      flex-wrap:wrap;
+      margin-top:8px;
+    }
+    nav a{
+      background:#fff;
+      border:1px solid var(--border);
+      border-radius:999px;
+      padding:10px 14px;
+      box-shadow:var(--shadow);
+      display:inline-block;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:22px;
+      margin-top:22px;
+    }
+    @media (min-width: 880px){
+      .hero{grid-template-columns: 1.15fr .85fr}
+      .grid{grid-template-columns: 1fr 1fr}
+    }
+    h2{
+      font-size: clamp(20px, 2.2vw, 28px);
+      margin:0 0 14px;
+      letter-spacing:-0.01em;
+    }
+    h3{
+      font-size: clamp(18px, 1.9vw, 22px);
+      margin:0 0 10px;
+    }
+    .list{
+      display:grid;
+      gap:10px;
+      padding-left:18px;
+    }
+    .tag{
+      display:inline-block;
+      font-size:14px;
+      padding:6px 10px;
+      border:1px solid var(--border);
+      border-radius:999px;
+      background:#fff;
+      margin-right:8px;
+      margin-bottom:8px;
+    }
+    .muted{color:var(--muted)}
+    .proj{
+      display:grid;
+      gap:10px;
+    }
+    .proj .meta{font-size:14px;color:var(--muted)}
+    footer{
+      text-align:center;
+      padding:28px;
+      color:var(--muted);
+    }
+    .visually-hidden{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap}
+    .contact a{display:inline-block;margin-right:12px}
+    .kbd{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono","Courier New", monospace;background:#111827;color:#e5e7eb;border-radius:6px;padding:2px 6px;font-size:12px}
+  </style>
+</head>
+<body>
+<a class="visually-hidden" href="#contenido">Saltar al contenido</a>
+<header role="banner">
+  <div class="container hero">
+    <div class="card" aria-labelledby="titulo">
+      <h1 id="titulo" class="title">Matías Jusari de los Ríos</h1>
+      <p class="subtitle">Egresado de Ingeniería en Biotecnología · Proyectos digitales y ML · Energía Solar Fotovoltaica</p>
+      <p>
+        Soy egresado de Ingeniería en Biotecnología con formación en energía solar fotovoltaica (instalación y mantención) y una especialización reciente en machine learning aplicada a proyectos digitales. 
+        Actualmente inicio un proyecto de e‑learning en Moodle y consolido experiencias de ML orientadas a analítica, anomalías y recomendación.
+      </p>
+      <nav aria-label="Secciones principales">
+        <a href="#proyectos">Proyectos</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#educacion">Educación</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+    <div class="card contact" aria-labelledby="contacto-card">
+      <h2 id="contacto-card">Contacto</h2>
+      <p><strong>Ubicación:</strong> Santiago de Chile</p>
+      <p><strong>Sitio:</strong> <a href="https://matia.space" rel="noopener">matia.space</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/matiasjdlr/" rel="noopener">linkedin.com/in/matiasjdlr</a></p>
+      <p><strong>Email:</strong> <a href="mailto:msjdlr@live.cl">msjdlr@live.cl</a></p>
+    </div>
+  </div>
+</header>
+
+<main id="contenido" class="container" role="main">
+
+  <section id="proyectos" class="grid" aria-labelledby="h-proyectos">
+    <div class="card" style="grid-column:1/-1">
+      <h2 id="h-proyectos">Proyectos (ML & Digital)</h2>
+      <p class="muted">Proyectos académicos y personales enfocados en machine learning y productos digitales. Pueden mostrarse sin código público (resúmenes y resultados); los enlaces se agregarán cuando estén listos.</p>
+    </div>
+
+    <!-- Proyecto ML 1 -->
+    <article class="card proj" aria-labelledby="p1">
+      <div>
+        <h3 id="p1">Detección de anomalías en consumo energético</h3>
+        <p class="meta">Rol: Diseño y modelado · 2025</p>
+      </div>
+      <p><strong>Descripción:</strong> Pipeline de análisis para identificar consumos atípicos en series temporales (simuladas o abiertas) con el fin de alertar ineficiencias o fallas.</p>
+      <ul class="list">
+        <li><strong>Objetivos:</strong> Construir un sistema de alerta temprana para detectar desviaciones y apoyar decisiones de mantenimiento.</li>
+        <li><strong>Tecnologías:</strong> Python (pandas, scikit‑learn), Isolation Forest / One‑Class SVM, visualización con Matplotlib.</li>
+        <li><strong>Resultados:</strong> Mejora en la detección de outliers y definición de umbrales operativos interpretables.</li>
+        <li><strong>Reflexión:</strong> La estandarización del preprocesamiento (resampleos, z‑score) y métricas de evaluación fue clave para resultados consistentes.</li>
+      </ul>
+      <!-- <p><a href="#" aria-label="Repositorio del proyecto de anomalías">Repositorio (próximamente)</a></p> -->
+    </article>
+
+    <!-- Proyecto ML 2 -->
+    <article class="card proj" aria-labelledby="p2">
+      <div>
+        <h3 id="p2">Estimación de producción FV con modelos de regresión</h3>
+        <p class="meta">Rol: Modelado predictivo · 2025</p>
+      </div>
+      <p><strong>Descripción:</strong> Modelo de regresión para estimar producción diaria de un sistema FV a partir de variables meteorológicas (irradiancia, temperatura, nubosidad) y parámetros del sistema.</p>
+      <ul class="list">
+        <li><strong>Objetivos:</strong> Comparar modelos base (Linear, Random Forest, XGBoost) y evaluar error (MAE/RMSE) para escenarios climáticos.</li>
+        <li><strong>Tecnologías:</strong> Python (scikit‑learn, xgboost), validación cruzada, ingeniería de características (lags/rolling).</li>
+        <li><strong>Resultados:</strong> Reducción de error respecto a baseline climatológico; aprendizaje sobre sensibilidad a la calidad de datos.</li>
+        <li><strong>Reflexión:</strong> El feature engineering temporal tuvo mayor impacto que la complejidad del modelo en sí.</li>
+      </ul>
+      <!-- <p><a href="#" aria-label="Repositorio del proyecto de estimación FV">Repositorio (próximamente)</a></p> -->
+    </article>
+
+    <!-- Proyecto ML 3 -->
+    <article class="card proj" aria-labelledby="p3">
+      <div>
+        <h3 id="p3">E‑learning en Moodle con recomendación básica</h3>
+        <p class="meta">Rol: Implementación y prototipo ML · 2025 (en curso)</p>
+      </div>
+      <p><strong>Descripción:</strong> Implementación de un curso en Moodle (estructura de unidades, cuestionarios y tracking). Prototipo simple de recomendación de contenidos (popularidad/recencia) para sugerir lecturas y quizzes.</p>
+      <ul class="list">
+        <li><strong>Objetivos:</strong> Crear curso navegable con evaluación y un módulo de sugerencias iniciales.</li>
+        <li><strong>Tecnologías:</strong> Moodle, Python (pandas), exportación/importación de datos de actividad para generar recomendaciones.</li>
+        <li><strong>Resultados (esperados):</strong> Incremento de engagement en ítems sugeridos; base para un recomendador colaborativo.</li>
+        <li><strong>Reflexión:</strong> Alinear objetivos pedagógicos con métricas de uso es clave para recomendaciones útiles.</li>
+      </ul>
+      <!-- <p><a href="#" aria-label="Demo del curso Moodle">Demo (próximamente)</a></p> -->
+    </article>
+  </section>
+
+  <section id="experiencia" class="grid" aria-labelledby="h-exp">
+    <div class="card" style="grid-column:1/-1">
+      <h2 id="h-exp">Experiencia reciente</h2>
+    </div>
+
+    <div class="card">
+      <h3>Kütral‑Clima · Ayudante de instalaciones</h3>
+      <p class="muted">2024–2025 · Instalaciones y mantenciones FV residenciales · Montaje, conexionado DC/AC, QA y puesta en marcha.</p>
+    </div>
+
+    <div class="card">
+      <h3>Proyecto personal · E‑learning en Moodle</h3>
+      <p class="muted">2025 (en curso) · Diseño de curso, configuración de actividades y extracción de datos para analítica y recomendaciones.</p>
+    </div>
+  </section>
+
+  <section id="educacion" class="grid" aria-labelledby="h-ed">
+    <div class="card" style="grid-column:1/-1">
+      <h2 id="h-ed">Educación</h2>
+    </div>
+
+    <div class="card">
+      <h3>Universidad de Santiago de Chile (USACH)</h3>
+      <p class="muted">Ingeniería en Biotecnología · 2015–2021</p>
+    </div>
+
+    <div class="card">
+      <h3>Bootcamp FV · SER‑CAP</h3>
+      <p class="muted">Instalación y Mantención de paneles solares fotovoltaicos (62 h) · 2024</p>
+    </div>
+
+    <div class="card">
+      <h3>Especialización en Machine Learning</h3>
+      <p class="muted">2025 (completado) · Proyectos académicos (en consolidación pública)</p>
+    </div>
+  </section>
+
+  <section id="habilidades" class="grid" aria-labelledby="h-hab">
+    <div class="card" style="grid-column:1/-1">
+      <h2 id="h-hab">Habilidades</h2>
+    </div>
+
+    <div class="card">
+      <h3>Técnicas</h3>
+      <p>
+        <span class="tag">Machine Learning</span>
+        <span class="tag">Anomalías (Isolation Forest)</span>
+        <span class="tag">Regresión (RF / XGBoost)</span>
+        <span class="tag">Python (pandas, scikit‑learn)</span>
+        <span class="tag">Moodle</span>
+        <span class="tag">Instalación FV</span>
+        <span class="tag">Excel (avanzado)</span>
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Blandas</h3>
+      <p>
+        <span class="tag">Comunicación</span>
+        <span class="tag">Trabajo en equipo</span>
+        <span class="tag">Organización</span>
+        <span class="tag">Seguridad y calidad</span>
+        <span class="tag">Aprendizaje continuo</span>
+      </p>
+    </div>
+  </section>
+
+  <section id="contacto" class="grid" aria-labelledby="h-cont">
+    <div class="card" style="grid-column:1/-1">
+      <h2 id="h-cont">Contacto</h2>
+      <p>¿Te interesa colaborar o tienes una propuesta? Escríbeme a <a href="mailto:msjdlr@live.cl">msjdlr@live.cl</a> o visita <a href="https://matia.space">matia.space</a>.</p>
+    </div>
+  </section>
+
+  <section class="container" aria-labelledby="h-notas">
+    <div class="card">
+      <h2 id="h-notas">Notas para la entrega</h2>
+      <ul class="list">
+        <li>Portafolio centrado en <strong>ML & digital</strong> y en la <strong>experiencia más reciente</strong>.</li>
+        <li>Si luego deseas, agrega enlaces a repos públicos o demos cuando estén listos.</li>
+        <li>Cuida la redacción, títulos y la navegación clara para cumplir la rúbrica.</li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer role="contentinfo">
+  © <span id="year"></span> Matías Jusari de los Ríos — Portafolio
+  <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+</footer>
+</body>
+</html>
