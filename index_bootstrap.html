@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portafolio · Matías Jusari de los Ríos</title>
+  <meta name="description" content="Portafolio de Matías Jusari de los Ríos: proyectos de Machine Learning, productos digitales y energía solar fotovoltaica.">
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    /* Hero gradient */
+    .hero {
+      background: radial-gradient(1200px 600px at 10% -10%, rgba(14,165,233,.25), transparent 60%),
+                  radial-gradient(800px 400px at 90% 10%, rgba(99,102,241,.2), transparent 55%);
+    }
+    .brand-initials {
+      width: 44px; height: 44px;
+      display:inline-grid; place-items:center;
+      border-radius:50%; font-weight:700; letter-spacing:.5px;
+      background: var(--bs-primary-bg-subtle); color: var(--bs-primary);
+    }
+    .shadow-soft { box-shadow: 0 1rem 2.5rem rgba(2,6,23,.08); }
+    .section-title .bi { opacity:.6; margin-right:.35rem; }
+    .badge-soft {
+      background: var(--bs-secondary-bg);
+      color: var(--bs-emphasis-color);
+      border: 1px solid var(--bs-border-color);
+    }
+    .card-hover:hover{ transform: translateY(-3px); transition: .2s ease; }
+    .sticky-cta{
+      position: fixed; right: 1rem; bottom: 1rem; z-index: 1031;
+    }
+    html{ scroll-behavior: smooth; }
+  </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#topnav" data-bs-offset="80" tabindex="0">
+
+<!-- NAVBAR -->
+<nav id="topnav" class="navbar navbar-expand-lg bg-body-tertiary sticky-top border-bottom">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#inicio">
+      <span class="brand-initials">MJ</span>
+      <span class="fw-semibold">Matías Jusari</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
+        <li class="nav-item"><a class="nav-link" href="#educacion">Educación</a></li>
+        <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+      </ul>
+      <div class="d-flex ms-lg-3 align-items-center gap-2">
+        <a class="btn btn-outline-primary btn-sm" href="https://www.linkedin.com/in/matiasjdlr/" target="_blank" rel="noopener">
+          <i class="bi bi-linkedin"></i> LinkedIn
+        </a>
+        <button id="themeToggle" class="btn btn-outline-secondary btn-sm" type="button" title="Cambiar tema">
+          <i class="bi bi-moon-stars"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header id="inicio" class="hero py-5 border-bottom">
+  <div class="container">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-7">
+        <div class="text-body-emphasis">
+          <span class="badge text-bg-primary-subtle border">Santiago de Chile</span>
+        </div>
+        <h1 class="display-5 fw-bold mt-3">Egresado de Ingeniería en Biotecnología</h1>
+        <p class="lead mb-3">Proyectos digitales y <span class="fw-semibold">machine learning</span>. Experiencia reciente en <span class="fw-semibold">energía solar fotovoltaica</span> (instalación y mantención). Actualmente construyendo un entorno de <span class="fw-semibold">e‑learning en Moodle</span>.</p>
+        <div class="d-flex flex-wrap gap-2">
+          <span class="badge rounded-pill text-bg-info-subtle border"><i class="bi bi-cpu"></i> ML aplicado</span>
+          <span class="badge rounded-pill text-bg-warning-subtle border"><i class="bi bi-lightning-charge"></i> Energía FV</span>
+          <span class="badge rounded-pill text-bg-success-subtle border"><i class="bi bi-journal-code"></i> Productos digitales</span>
+        </div>
+        <div class="mt-4 d-flex gap-2">
+          <a class="btn btn-primary shadow-soft" href="#proyectos"><i class="bi bi-grid"></i> Ver proyectos</a>
+          <a class="btn btn-outline-secondary" href="mailto:msjdlr@live.cl"><i class="bi bi-envelope"></i> Contacto</a>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="card shadow-soft">
+          <div class="card-body">
+            <h2 class="h5 mb-3"><i class="bi bi-person-gear"></i> Sobre mí</h2>
+            <p class="mb-2">Soy egresado con formación en energía solar (bootcamp) y especialización en ML. Enfocado en eficiencia, calidad y aprendizaje continuo.</p>
+            <div class="row g-2 mt-3">
+              <div class="col-12"><i class="bi bi-geo-alt me-2"></i>Santiago de Chile</div>
+              <div class="col-12"><i class="bi bi-globe2 me-2"></i><a href="https://matia.space" target="_blank" rel="noopener">matia.space</a></div>
+              <div class="col-12"><i class="bi bi-linkedin me-2"></i><a href="https://www.linkedin.com/in/matiasjdlr/" target="_blank" rel="noopener">linkedin.com/in/matiasjdlr</a></div>
+              <div class="col-12"><i class="bi bi-envelope me-2"></i><a href="mailto:msjdlr@live.cl">msjdlr@live.cl</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- PROYECTOS -->
+<section id="proyectos" class="py-5">
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-between mb-3">
+      <h2 class="section-title h3 m-0"><i class="bi bi-grid-3x3-gap"></i> Proyectos (ML & Digital)</h2>
+      <span class="text-secondary small">2025</span>
+    </div>
+
+    <div class="row g-4">
+      <!-- Proyecto 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 card-hover">
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <i class="bi bi-activity fs-4 text-primary"></i>
+              <h3 class="h5 m-0">Detección de anomalías en consumo energético</h3>
+            </div>
+            <p class="text-secondary mb-3">Pipeline para identificar consumos atípicos en series temporales, con alertas tempranas de ineficiencias o fallas.</p>
+            <div class="mb-3">
+              <span class="badge badge-soft rounded-pill me-1">Python</span>
+              <span class="badge badge-soft rounded-pill me-1">pandas</span>
+              <span class="badge badge-soft rounded-pill me-1">scikit‑learn</span>
+              <span class="badge badge-soft rounded-pill me-1">Isolation Forest</span>
+            </div>
+            <div class="mt-auto d-flex gap-2">
+              <button class="btn btn-sm btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#p1more" aria-expanded="false">
+                <i class="bi bi-arrows-expand"></i> Detalle
+              </button>
+              <a class="btn btn-sm btn-secondary disabled" aria-disabled="true"><i class="bi bi-github"></i> Repo (pronto)</a>
+            </div>
+            <div id="p1more" class="collapse mt-3">
+              <ul class="list-unstyled small mb-0">
+                <li><i class="bi bi-check2"></i> Umbrales interpretables y evaluación con métricas robustas.</li>
+                <li><i class="bi bi-check2"></i> Preprocesamiento estandarizado (resampleo, z‑score).</li>
+                <li><i class="bi bi-check2"></i> Visualizaciones de apoyo (tendencias/outliers).</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proyecto 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 card-hover">
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <i class="bi bi-sun fs-4 text-warning"></i>
+              <h3 class="h5 m-0">Estimación de producción FV por clima</h3>
+            </div>
+            <p class="text-secondary mb-3">Modelos de regresión para estimar producción diaria de un sistema fotovoltaico a partir de variables meteorológicas.</p>
+            <div class="mb-3">
+              <span class="badge badge-soft rounded-pill me-1">Python</span>
+              <span class="badge badge-soft rounded-pill me-1">scikit‑learn</span>
+              <span class="badge badge-soft rounded-pill me-1">XGBoost</span>
+              <span class="badge badge-soft rounded-pill me-1">Features temporales</span>
+            </div>
+            <div class="mt-auto d-flex gap-2">
+              <button class="btn btn-sm btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#p2more" aria-expanded="false">
+                <i class="bi bi-arrows-expand"></i> Detalle
+              </button>
+              <a class="btn btn-sm btn-secondary disabled" aria-disabled="true"><i class="bi bi-github"></i> Repo (pronto)</a>
+            </div>
+            <div id="p2more" class="collapse mt-3">
+              <ul class="list-unstyled small mb-0">
+                <li><i class="bi bi-check2"></i> Comparación MAE/RMSE vs. baseline climatológico.</li>
+                <li><i class="bi bi-check2"></i> Ingeniería de lags y ventanas móviles.</li>
+                <li><i class="bi bi-check2"></i> Análisis de sensibilidad a la calidad de datos.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proyecto 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 card-hover">
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <i class="bi bi-mortarboard fs-4 text-success"></i>
+              <h3 class="h5 m-0">E‑learning en Moodle + recomendación básica</h3>
+            </div>
+            <p class="text-secondary mb-3">Curso piloto en Moodle con estructura de unidades, quizzes y un módulo inicial de sugerencias por popularidad/recencia.</p>
+            <div class="mb-3">
+              <span class="badge badge-soft rounded-pill me-1">Moodle</span>
+              <span class="badge badge-soft rounded-pill me-1">Python</span>
+              <span class="badge badge-soft rounded-pill me-1">Analítica de uso</span>
+            </div>
+            <div class="mt-auto d-flex gap-2">
+              <button class="btn btn-sm btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#p3more" aria-expanded="false">
+                <i class="bi bi-arrows-expand"></i> Detalle
+              </button>
+              <a class="btn btn-sm btn-secondary disabled" aria-disabled="true"><i class="bi bi-display"></i> Demo (pronto)</a>
+            </div>
+            <div id="p3more" class="collapse mt-3">
+              <ul class="list-unstyled small mb-0">
+                <li><i class="bi bi-check2"></i> Estructura de tópicos, bancos de preguntas y retroalimentación.</li>
+                <li><i class="bi bi-check2"></i> Exportación de logs para recomendaciones simples.</li>
+                <li><i class="bi bi-check2"></i> Base para recomendador colaborativo en siguiente iteración.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCIA -->
+<section id="experiencia" class="py-5 bg-body-tertiary border-top border-bottom">
+  <div class="container">
+    <h2 class="section-title h3 mb-4"><i class="bi bi-briefcase"></i> Experiencia reciente</h2>
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <div class="card h-100 shadow-soft">
+          <div class="card-body">
+            <div class="d-flex align-items-start justify-content-between">
+              <h3 class="h5 mb-1">Kütral‑Clima · Ayudante de instalaciones</h3>
+              <span class="text-secondary small">2024–2025</span>
+            </div>
+            <p class="text-secondary">Instalaciones y mantenciones FV residenciales: montaje, conexionado DC/AC, QA y puesta en marcha.</p>
+            <ul class="list-unstyled small mb-0">
+              <li><i class="bi bi-dot"></i> Checklists de seguridad y calidad.</li>
+              <li><i class="bi bi-dot"></i> Organización de herramientas e insumos.</li>
+              <li><i class="bi bi-dot"></i> Soporte en pruebas de operación de inversor.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="card h-100 shadow-soft">
+          <div class="card-body">
+            <div class="d-flex align-items-start justify-content-between">
+              <h3 class="h5 mb-1">Proyecto personal · E‑learning en Moodle</h3>
+              <span class="text-secondary small">2025 (en curso)</span>
+            </div>
+            <p class="text-secondary">Diseño de curso, configuración de actividades y extracción de datos para analítica y recomendaciones.</p>
+            <ul class="list-unstyled small mb-0">
+              <li><i class="bi bi-dot"></i> Unidades, quizzes y seguimiento de progreso.</li>
+              <li><i class="bi bi-dot"></i> Prototipo de sugerencias por popularidad/recencia.</li>
+              <li><i class="bi bi-dot"></i> Plan de mejoras con enfoque pedagógico.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCACIÓN -->
+<section id="educacion" class="py-5">
+  <div class="container">
+    <h2 class="section-title h3 mb-4"><i class="bi bi-mortarboard"></i> Educación</h2>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card h-100 shadow-soft">
+          <div class="card-body">
+            <div class="d-flex align-items-start justify-content-between">
+              <h3 class="h5 mb-1">Universidad de Santiago de Chile (USACH)</h3>
+              <span class="text-secondary small">2015–2021</span>
+            </div>
+            <p class="text-secondary mb-0">Ingeniería en Biotecnología.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card h-100 shadow-soft">
+          <div class="card-body">
+            <div class="d-flex align-items-start justify-content-between">
+              <h3 class="h5 mb-1">Bootcamp FV · SER‑CAP</h3>
+              <span class="text-secondary small">2024</span>
+            </div>
+            <p class="text-secondary mb-0">Instalación y Mantención de paneles solares fotovoltaicos (62 h).</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card h-100 shadow-soft">
+          <div class="card-body">
+            <div class="d-flex align-items-start justify-content-between">
+              <h3 class="h5 mb-1">Especialización en Machine Learning</h3>
+              <span class="text-secondary small">2025</span>
+            </div>
+            <p class="text-secondary mb-0">Proyectos académicos (en consolidación pública).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HABILIDADES -->
+<section id="habilidades" class="py-5 bg-body-tertiary border-top border-bottom">
+  <div class="container">
+    <h2 class="section-title h3 mb-4"><i class="bi bi-stars"></i> Habilidades</h2>
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <div class="card h-100">
+          <div class="card-body">
+            <h3 class="h6 text-uppercase text-secondary">Técnicas</h3>
+            <div class="d-flex flex-wrap gap-2 mt-2">
+              <span class="badge text-bg-light border">Machine Learning</span>
+              <span class="badge text-bg-light border">Anomalías (Isolation Forest)</span>
+              <span class="badge text-bg-light border">Regresión (RF / XGBoost)</span>
+              <span class="badge text-bg-light border">Python (pandas, scikit‑learn)</span>
+              <span class="badge text-bg-light border">Moodle</span>
+              <span class="badge text-bg-light border">Instalación FV</span>
+              <span class="badge text-bg-light border">Excel (avanzado)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="card h-100">
+          <div class="card-body">
+            <h3 class="h6 text-uppercase text-secondary">Blandas</h3>
+            <div class="d-flex flex-wrap gap-2 mt-2">
+              <span class="badge text-bg-light border">Comunicación</span>
+              <span class="badge text-bg-light border">Trabajo en equipo</span>
+              <span class="badge text-bg-light border">Organización</span>
+              <span class="badge text-bg-light border">Seguridad y calidad</span>
+              <span class="badge text-bg-light border">Aprendizaje continuo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="py-5">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-8">
+        <div class="card shadow-soft">
+          <div class="card-body">
+            <h2 class="section-title h3"><i class="bi bi-envelope-paper"></i> Contacto</h2>
+            <p class="text-secondary">¿Te interesa colaborar o tienes una propuesta?</p>
+            <div class="row g-3">
+              <div class="col-12 col-md-6">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="nameInput" placeholder="Nombre">
+                  <label for="nameInput">Nombre</label>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="form-floating">
+                  <input type="email" class="form-control" id="emailInput" placeholder="correo@dominio.com">
+                  <label for="emailInput">Correo</label>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-floating">
+                  <textarea class="form-control" placeholder="Mensaje" id="msgInput" style="height: 120px"></textarea>
+                  <label for="msgInput">Mensaje</label>
+                </div>
+              </div>
+              <div class="col-12 d-flex gap-2">
+                <a class="btn btn-primary" href="mailto:msjdlr@live.cl?subject=Contacto%20Portafolio%20Matias&body=Hola%20Mat%C3%ADas," target="_blank" rel="noopener">
+                  <i class="bi bi-send"></i> Enviar por email
+                </a>
+                <a class="btn btn-outline-secondary" href="https://matia.space" target="_blank" rel="noopener">
+                  <i class="bi bi-globe2"></i> Visitar sitio
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card h-100 shadow-soft">
+          <div class="card-body">
+            <h3 class="h6 text-uppercase text-secondary mb-3">Atajos</h3>
+            <div class="list-group list-group-flush">
+              <a class="list-group-item list-group-item-action" href="#proyectos"><i class="bi bi-grid me-2"></i>Proyectos</a>
+              <a class="list-group-item list-group-item-action" href="#experiencia"><i class="bi bi-briefcase me-2"></i>Experiencia</a>
+              <a class="list-group-item list-group-item-action" href="#educacion"><i class="bi bi-mortarboard me-2"></i>Educación</a>
+              <a class="list-group-item list-group-item-action" href="#habilidades"><i class="bi bi-stars me-2"></i>Habilidades</a>
+            </div>
+            <div class="mt-3 small text-secondary">
+              <i class="bi bi-shield-check"></i> Diseño optimizado para accesibilidad y dispositivos móviles.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BACK TO TOP -->
+<div class="sticky-cta">
+  <a href="#inicio" class="btn btn-primary rounded-circle p-3 shadow-soft" title="Volver arriba">
+    <i class="bi bi-arrow-up"></i>
+  </a>
+</div>
+
+<footer class="py-4 border-top bg-body-tertiary">
+  <div class="container d-flex flex-column flex-sm-row align-items-center justify-content-between gap-3">
+    <div class="small text-secondary">© <span id="year"></span> Matías Jusari de los Ríos</div>
+    <div class="small">
+      <a class="link-secondary me-3" href="mailto:msjdlr@live.cl"><i class="bi bi-envelope"></i> Email</a>
+      <a class="link-secondary me-3" href="https://www.linkedin.com/in/matiasjdlr/" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i> LinkedIn</a>
+      <a class="link-secondary" href="https://matia.space" target="_blank" rel="noopener"><i class="bi bi-globe2"></i> matia.space</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Año en footer
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Tema (light/dark) con localStorage
+  const root = document.documentElement;
+  const toggleBtn = document.getElementById('themeToggle');
+  const storedTheme = localStorage.getItem('bs-theme') || 'light';
+  root.setAttribute('data-bs-theme', storedTheme);
+  function setIcon(theme){
+    toggleBtn.innerHTML = theme === 'dark'
+      ? '<i class="bi bi-brightness-high"></i>'
+      : '<i class="bi bi-moon-stars"></i>';
+  }
+  setIcon(storedTheme);
+  toggleBtn.addEventListener('click', () => {
+    const current = root.getAttribute('data-bs-theme');
+    const next = current === 'light' ? 'dark' : 'light';
+    root.setAttribute('data-bs-theme', next);
+    localStorage.setItem('bs-theme', next);
+    setIcon(next);
+  });
+</script>
+</body>
+</html>
