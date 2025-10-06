@@ -41,7 +41,7 @@
       <span class="brand-initials">MJ</span>
       <span class="fw-semibold">Matías Jusari</span>
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Abrir navegación">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navContent">
@@ -56,7 +56,7 @@
         <a class="btn btn-outline-primary btn-sm" href="https://www.linkedin.com/in/matiasjdlr/" target="_blank" rel="noopener">
           <i class="bi bi-linkedin"></i> LinkedIn
         </a>
-        <button id="themeToggle" class="btn btn-outline-secondary btn-sm" type="button" title="Cambiar tema">
+        <button id="themeToggle" class="btn btn-outline-secondary btn-sm" type="button" title="Cambiar tema" aria-label="Cambiar tema">
           <i class="bi bi-moon-stars"></i>
         </button>
       </div>
@@ -141,18 +141,29 @@
               <span class="badge badge-soft rounded-pill me-1">PostgreSQL/MySQL</span>
             </div>
             <div class="mt-auto d-flex gap-2">
-              <button class="btn btn-sm btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#p1more" aria-expanded="false">
+              <button class="btn btn-sm btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#p1more" aria-expanded="false" aria-controls="p1more">
                 <i class="bi bi-arrows-expand"></i> Detalle
               </button>
               <a class="btn btn-sm btn-secondary disabled" aria-disabled="true"><i class="bi bi-display"></i> Demo (pronto)</a>
             </div>
+            <!-- Detalle p1 -->
             <div id="p1more" class="collapse mt-3">
-              <ul class="list-unstyled small mb-0">
-                <li><i class="bi bi-check2"></i> Taxonomía de cursos y roles (admin/docente/estudiante).</li>
-                <li><i class="bi bi-check2"></i> Plan de respaldos verificado y restauración.</li>
-                <li><i class="bi bi-check2"></i> Exportación de logs (actividad, finalización, calificaciones).</li>
-              </ul>
+              <div class="small">
+                <h6 class="mb-2">Resultados (piloto)</h6>
+                <ul class="mb-2">
+                  <li>Instalación operativa con estructura inicial de cursos y roles validados (admin, docente, estudiante).</li>
+                  <li><strong>Backups automáticos diarios</strong> configurados; <strong>restore</strong> probado end-to-end (objetivo &le; 10 min).</li>
+                  <li><strong>Logstore</strong> habilitado y <strong>exportación semanal</strong> de actividad (CSV) lista para ETL.</li>
+                </ul>
+                <h6 class="mt-3 mb-2">Reflexión</h6>
+                <p class="mb-0">
+                  Priorizamos <strong>resiliencia y trazabilidad</strong> antes de escalar funcionalidades. La mayor fricción estuvo en
+                  <strong>permisos</strong> y <strong>mapeo de logs</strong>; lo resolvimos con una taxonomía mínima de cursos/roles y un
+                  checklist de restauración. Siguiente paso: <strong>conectar ETL n8n → DB</strong> y definir estándares de calidad de datos.
+                </p>
+              </div>
             </div>
+            <!-- /Detalle p1 -->
           </div>
         </div>
       </div>
@@ -175,18 +186,29 @@
               <span class="badge badge-soft rounded-pill me-1">PostgreSQL</span>
             </div>
             <div class="mt-auto d-flex gap-2">
-              <button class="btn btn-sm btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#p2more" aria-expanded="false">
+              <button class="btn btn-sm btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#p2more" aria-expanded="false" aria-controls="p2more">
                 <i class="bi bi-arrows-expand"></i> Detalle
               </button>
               <a class="btn btn-sm btn-secondary disabled" aria-disabled="true"><i class="bi bi-github"></i> Repo (pronto)</a>
             </div>
+            <!-- Detalle p2 -->
             <div id="p2more" class="collapse mt-3">
-              <ul class="list-unstyled small mb-0">
-                <li><i class="bi bi-check2"></i> Scheduler de jobs y registro de ejecuciones.</li>
-                <li><i class="bi bi-check2"></i> Esquema versionado (usuarios, cursos, eventos, resultados).</li>
-                <li><i class="bi bi-check2"></i> Alertas básicas ante fallos.</li>
-              </ul>
+              <div class="small">
+                <h6 class="mb-2">Resultados (piloto)</h6>
+                <ul class="mb-2">
+                  <li>Workflow <strong>n8n</strong> con <strong>scheduler</strong> (24 h) que <strong>extrae, limpia y carga</strong> eventos a <strong>PostgreSQL</strong>.</li>
+                  <li><strong>Esquema normalizado</strong> (usuarios, cursos, eventos, resultados) con control de versiones.</li>
+                  <li><strong>Registro de ejecuciones</strong> y <strong>alerta</strong> en caso de fallos (notificación por correo).</li>
+                </ul>
+                <h6 class="mt-3 mb-2">Reflexión</h6>
+                <p class="mb-0">
+                  Los datos presentaron <strong>inconsistencias</strong> (nombres/IDs), por lo que adoptamos un <strong>mapeo incremental</strong>
+                  y reglas de validación simples. Dejamos una base <em>observable</em> y <em>alertable</em> que reduce tiempo de diagnóstico.
+                  Siguiente paso: publicar <strong>vistas</strong> para Power BI y exponer <strong>métricas</strong> al recomendador.
+                </p>
+              </div>
             </div>
+            <!-- /Detalle p2 -->
           </div>
         </div>
       </div>
@@ -209,18 +231,29 @@
               <span class="badge badge-soft rounded-pill me-1">Docker</span>
             </div>
             <div class="mt-auto d-flex gap-2">
-              <button class="btn btn-sm btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#p3more" aria-expanded="false">
+              <button class="btn btn-sm btn-outline-primary" data-bs-toggle="collapse" data-bs-target="#p3more" aria-expanded="false" aria-controls="p3more">
                 <i class="bi bi-arrows-expand"></i> Detalle
               </button>
               <a class="btn btn-sm btn-secondary disabled" aria-disabled="true"><i class="bi bi-gear"></i> API (pronto)</a>
             </div>
+            <!-- Detalle p3 -->
             <div id="p3more" class="collapse mt-3">
-              <ul class="list-unstyled small mb-0">
-                <li><i class="bi bi-check2"></i> Endpoint <code>/recommend</code> (Top-N por usuario/curso).</li>
-                <li><i class="bi bi-check2"></i> Medición de CTR y engagement de sugeridos.</li>
-                <li><i class="bi bi-check2"></i> Preparado para señales de similitud/colaborativo.</li>
-              </ul>
+              <div class="small">
+                <h6 class="mb-2">Resultados (piloto)</h6>
+                <ul class="mb-2">
+                  <li>API <code>/recommend</code> lista para <strong>Top-N</strong> por usuario/curso; latencia objetivo <strong>P95 &lt; 300 ms</strong>.</li>
+                  <li>Señales iniciales: <strong>popularidad</strong> (interacciones globales) y <strong>recencia</strong> (actividad reciente).</li>
+                  <li>Telemetría básica para <strong>CTR/engagement</strong> de sugeridos.</li>
+                </ul>
+                <h6 class="mt-3 mb-2">Reflexión</h6>
+                <p class="mb-0">
+                  Partimos con un enfoque <strong>simple y explicable</strong> para acelerar el despliegue y recolectar señales de uso.
+                  La lección clave es separar <strong>servicio</strong> y <strong>feature flags</strong> para iterar sin romper la interfaz.
+                  Próximo hito: añadir <strong>similitud de ítems</strong> y evaluar un <strong>colaborativo</strong> ligero.
+                </p>
+              </div>
             </div>
+            <!-- /Detalle p3 -->
           </div>
         </div>
       </div>
@@ -412,7 +445,7 @@
 
 <!-- BACK TO TOP -->
 <div class="sticky-cta">
-  <a href="#inicio" class="btn btn-primary rounded-circle p-3 shadow-soft" title="Volver arriba">
+  <a href="#inicio" class="btn btn-primary rounded-circle p-3 shadow-soft" title="Volver arriba" aria-label="Volver arriba">
     <i class="bi bi-arrow-up"></i>
   </a>
 </div>
