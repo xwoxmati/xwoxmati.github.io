@@ -4,7 +4,7 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  base: "/xwoxmati.github.io/",
+  base: "https://xwoxmati.github.io/",
   server: {
     host: "::",
     port: 8080,
