@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 20% 97%;
+    --foreground: 222 47% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --card-shadow: 0 0 0 1px rgba(0,0,0,.05), 0 2px 4px rgba(0,0,0,.05), 0 12px 24px -4px rgba(0,0,0,.08);
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    --primary: 28 95% 52%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 20% 96%;
+    --secondary-foreground: 222 47% 11%;
+    --muted: 210 20% 96%;
+    --muted-foreground: 215 16% 47%;
+    --accent: 28 95% 96%;
+    --accent-foreground: 28 95% 30%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 28 95% 52%;
+    --radius: 0.5rem;
+    --radius-outer: 12px;
+    --radius-inner: 8px;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 28 95% 52%;
+  }
+
+  .dark {
+    --background: 220 20% 5%;
+    --foreground: 210 40% 92%;
+    --card: 220 20% 8%;
+    --card-foreground: 210 40% 92%;
+    --card-shadow: 0 0 0 1px rgba(255,255,255,.05), 0 2px 4px rgba(0,0,0,.3), 0 12px 24px -4px rgba(0,0,0,.4);
+    --popover: 220 20% 8%;
+    --popover-foreground: 210 40% 92%;
+    --primary: 28 95% 52%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 15% 15%;
+    --secondary-foreground: 210 40% 92%;
+    --muted: 220 15% 15%;
+    --muted-foreground: 215 20% 60%;
+    --accent: 28 40% 15%;
+    --accent-foreground: 28 95% 70%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 100%;
+    --success: 142 71% 35%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 40%;
+    --warning-foreground: 0 0% 100%;
+    --border: 220 15% 18%;
+    --input: 220 15% 18%;
+    --ring: 28 95% 52%;
+    --sidebar-background: 220 20% 6%;
+    --sidebar-foreground: 240 4.8% 85%;
+    --sidebar-primary: 28 95% 52%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 15% 12%;
+    --sidebar-accent-foreground: 240 4.8% 85%;
+    --sidebar-border: 220 15% 15%;
+    --sidebar-ring: 28 95% 52%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'IBM Plex Sans', system-ui, sans-serif;
+    font-feature-settings: "tnum" on, "lnum" on;
+  }
+}
+
+@layer utilities {
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+  .label-xs {
+    @apply text-[11px] font-bold uppercase tracking-wider text-muted-foreground;
+  }
+  .value-lg {
+    @apply text-3xl font-semibold tabular-nums text-foreground;
+  }
+  .value-sm {
+    @apply text-sm font-medium text-muted-foreground;
+  }
+  .card-executive {
+    @apply bg-card p-5 rounded-[var(--radius-outer)];
+    box-shadow: var(--card-shadow);
+  }
+  .card-section {
+    @apply bg-card p-5 rounded-[var(--radius-outer)];
+    box-shadow: var(--card-shadow);
+  }
+  .input-group {
+    @apply flex flex-col gap-1;
+  }
+}
+
+@media print {
+  body { background: white !important; color: black !important; }
+  .no-print { display: none !important; }
+  .card-executive, .card-section { box-shadow: none !important; border: 1px solid #e2e8f0 !important; break-inside: avoid; }
+}
